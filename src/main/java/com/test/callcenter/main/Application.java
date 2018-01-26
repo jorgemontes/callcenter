@@ -3,6 +3,10 @@ package com.test.callcenter.main;
 import com.test.callcenter.dispatcher.Dispatcher;
 import com.test.callcenter.entity.Call;
 import com.test.callcenter.entity.CallcenterSingletonQueue;
+import com.test.callcenter.entity.Director;
+import com.test.callcenter.entity.EmployeesSingletonQueue;
+import com.test.callcenter.entity.Operator;
+import com.test.callcenter.entity.Supervisor;
 
 import lombok.extern.java.Log;
 
@@ -14,13 +18,19 @@ public class Application {
 		log.info("Creating " + numberOfCalls + " calls");
 		CallcenterSingletonQueue singleton = CallcenterSingletonQueue.INSTANCE;
 		for (int i = 0; i < numberOfCalls; i++) {
-			singleton.getQueue().put(new Call());
+			singleton.getQueue().add(new Call());
 		}
-		int numberOfOperator = Integer.valueOf(args[1]);
-		int numberOfSupervisor = Integer.valueOf(args[2]);
-		int numberOfDirector = Integer.valueOf(args[3]);
-		Dispatcher dispatcher = new Dispatcher(numberOfOperator, numberOfSupervisor, numberOfDirector);
-		log.info(singleton.toString());
+		int numberOfEmployees = Integer.valueOf(args[1]);
+		EmployeesSingletonQueue employeesSingletonQueue = EmployeesSingletonQueue.INSTANCE;
+		for (int i = 0; i < numberOfEmployees; i++) {
+			employeesSingletonQueue.addEmployee(Operator.builder().build());
+			employeesSingletonQueue.addEmployee(Supervisor.builder().build());
+			employeesSingletonQueue.addEmployee(Director.builder().build());
+
+		}
+
+		Dispatcher dispatcher = new Dispatcher();
+		dispatcher.dispatchCall();
 
 	}
 }

@@ -1,6 +1,7 @@
 package com.test.callcenter.entity;
 
-import java.util.concurrent.SynchronousQueue;
+import java.util.LinkedList;
+import java.util.Queue;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -13,6 +14,6 @@ public enum CallcenterSingletonQueue {
 
 	INSTANCE;
 
-	SynchronousQueue<Call> queue = new SynchronousQueue<>();
+	Queue<Call> queue = new LinkedList<>();
 
 }
