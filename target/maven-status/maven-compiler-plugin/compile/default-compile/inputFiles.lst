@@ -1,9 +1,0 @@
-/home/jorge/workspace/callcenter/src/main/java/com/test/callcenter/main/Application.java
-/home/jorge/workspace/callcenter/src/main/java/com/test/callcenter/entity/Supervisor.java
-/home/jorge/workspace/callcenter/src/main/java/com/test/callcenter/entity/Operator.java
-/home/jorge/workspace/callcenter/src/main/java/com/test/callcenter/singleton/CallcenterSingletonQueue.java
-/home/jorge/workspace/callcenter/src/main/java/com/test/callcenter/singleton/EmployeesSingletonQueue.java
-/home/jorge/workspace/callcenter/src/main/java/com/test/callcenter/entity/Call.java
-/home/jorge/workspace/callcenter/src/main/java/com/test/callcenter/dispatcher/Dispatcher.java
-/home/jorge/workspace/callcenter/src/main/java/com/test/callcenter/entity/Employee.java
-/home/jorge/workspace/callcenter/src/main/java/com/test/callcenter/entity/Director.java
