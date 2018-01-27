@@ -1,14 +1,16 @@
-package com.test.callcenter.entity;
+package com.test.callcenter.singleton;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
+import com.test.callcenter.entity.Employee;
+import com.test.callcenter.entity.Operator;
+import com.test.callcenter.entity.Supervisor;
+
 import lombok.Getter;
-import lombok.Setter;
 import lombok.ToString;
 
 @Getter
-@Setter
 @ToString
 public enum EmployeesSingletonQueue {
 

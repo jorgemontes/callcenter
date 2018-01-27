@@ -1,5 +1,7 @@
 package com.test.callcenter.entity;
 
+import com.test.callcenter.entity.Employee;
+
 import lombok.Builder;
 
 @Builder
