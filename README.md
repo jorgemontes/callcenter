@@ -14,7 +14,7 @@
 * Employees are also stored in queues that represents the ones that are available.
 * The thread pool size is as big as the Callcenter is. That means that if the callcenter has 30 employees, 30 calls can be attended at the same time.
 * Class Diagram
-![entities][img/class1.jpg]
+![entities][./img/class1.jpg]
 
 ## Run the program
 
