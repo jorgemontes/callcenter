@@ -16,14 +16,14 @@
 ## Run the program
 
 * `cd` to the project's root directory.
-* run the Maven command `mvn clean package`
+* run the Maven command `mvn clean compile assembly:single`
 * if the build is successful it should log the path of the java archive created
 
-`[INFO] Building jar: /home/jorge/workspace/callcenter/target/callcenter-0.0.1-SNAPSHOT.jar`
+`[INFO] Building jar: /home/jorge/workspace/callcenter/target/callcenter-0.0.1-SNAPSHOT-jar-with-dependencies.jar`
 
 * Run the application using as the first param the number of calls and for second parameter the number of employees of each type of employees. For example:
 
-`java -jar target/callcenter-0.0.1-SNAPSHOT.jar 100 10`
+`java -jar target/callcenter-0.0.1-SNAPSHOT-jar-with-dependencies.jar 100 10`
 
 will create 100 calls, 10 Operators, 10 Directors and 10 Supervisors
 
