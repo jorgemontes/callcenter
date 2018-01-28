@@ -9,9 +9,9 @@ import com.test.callcenter.entity.Employee;
 import com.test.callcenter.singleton.CallcenterSingletonQueue;
 import com.test.callcenter.singleton.EmployeesSingletonQueue;
 
-import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
 
-@Log
+@Slf4j
 public class Dispatcher {
 
 	CallcenterSingletonQueue callcenterSingletonQueue = CallcenterSingletonQueue.INSTANCE;

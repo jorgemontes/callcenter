@@ -10,9 +10,9 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.Synchronized;
-import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
 
-@Log
+@Slf4j
 @Setter
 @Getter
 @Builder
@@ -21,6 +21,7 @@ public class Call implements Runnable {
 	private static final int RANDOM_MAX_TIME = 5;
 	private static final int MIN_CALLTIME = 5;
 	private Employee employee;
+	@Builder.Default
 	private UUID id = UUID.randomUUID();
 
 	@Synchronized

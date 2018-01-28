@@ -35,9 +35,9 @@ public class DispatcherTest {
 	private void setUpEmployees() {
 		EmployeesSingletonQueue employeeInstance = EmployeesSingletonQueue.INSTANCE;
 		for (int i = 0; i < NUMBER_OF_EMPLOYEES; i++) {
-			employeeInstance.getOperatorQueue().add(Operator.builder().build());
-			employeeInstance.getSupervisorQueue().add(Supervisor.builder().build());
-			employeeInstance.getDirectorQueue().add(Director.builder().build());
+			employeeInstance.addEmployee(Operator.builder().build());
+			employeeInstance.addEmployee(Supervisor.builder().build());
+			employeeInstance.addEmployee(Director.builder().build());
 		}
 	}
 
