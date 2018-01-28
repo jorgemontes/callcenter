@@ -7,7 +7,14 @@
 
 ## Design Approach
 
-*
+* Builder pattern was used in the entity classes to simplify Object creation. This was made with lomboks annotation `@Builder`
+* Enums were used as singleton classes because of their thread-safe features
+* Java Executor Service was used to handle the Thread Pool.
+* Calls were created and queued so its easy to check which Calls are still pending to be attended.
+* Employees are also stored in queues that represents the ones that are available.
+* The thread pool size is as big as the Callcenter is. That means that if the callcenter has 30 employees, 30 calls can be attended at the same time.
+* Class Diagram
+![alt text][img/class1.jpg]
 
 ## Run the program
 
