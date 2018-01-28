@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import com.test.callcenter.singleton.EmployeesSingletonQueue;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.Synchronized;
@@ -14,6 +15,7 @@ import lombok.extern.java.Log;
 @Log
 @Setter
 @Getter
+@Builder
 public class Call implements Runnable {
 
 	private static final int RANDOM_MAX_TIME = 5;

@@ -37,7 +37,7 @@ public class Application {
 	private static void fillCalls(Integer numberOfCalls) {
 		CallcenterSingletonQueue singleton = CallcenterSingletonQueue.INSTANCE;
 		for (int i = 0; i < numberOfCalls; i++) {
-			singleton.getCallQueue().add(new Call());
+			singleton.getCallQueue().add(Call.builder().build());
 		}
 	}
 }
