@@ -17,6 +17,8 @@
 
 ![entities](img/class1.jpg)
 
+There should be more UML...i'm sorry
+
 ## Run the program
 
 * `cd` to the project's root directory.
